@@ -1,14 +1,14 @@
 import firebase from "firebase";
 
 const firebaseApp = firebase.initializeApp({
-    apiKey: "AIzaSyBEfUnkJoDpkf8-TEYNepRr7w9QRZNhGcc",
-    authDomain: "photos-77.firebaseapp.com",
-    databaseURL: "https://photos-77-default-rtdb.firebaseio.com",
-    projectId: "photos-77",
-    storageBucket: "photos-77.appspot.com",
-    messagingSenderId: "1029024055444",
-    appId: "1:1029024055444:web:54fdec9f34335d2942f481",
-    measurementId: "G-HVRJKN3EX3"
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_APP_ID,
+    measurementId: process.env.REACT_APP_FIREBASE_MEASURMENT_ID,
 });
 
 const db = firebaseApp.firestore();
